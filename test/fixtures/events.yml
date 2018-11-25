@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sport: MyString
+  place: MyString
+  dateti: 2018-11-26 00:07:21
+  contact: MyString
+
+two:
+  sport: MyString
+  place: MyString
+  dateti: 2018-11-26 00:07:21
+  contact: MyString

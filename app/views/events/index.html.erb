@@ -1,0 +1,23 @@
+<h1>All events</h1>
+<hr>
+<table>
+  <tr>
+    <th>Sport Type</th>
+	<th>Place</th>
+	<th>Date</th>
+    <th>Contact</th>
+    <th></th>
+  </tr>
+
+  <% @events.each do |event| %>
+    <tr>
+      <td><%= event.sport %>&nbsp;&nbsp;</td>
+	  <td><%= event.place %>&nbsp;&nbsp;</td>
+	  <td><%= event.dateti %>&nbsp;&nbsp;</td>
+	  <td><%= event.contact %>&nbsp;&nbsp;</td>
+      <td><%= link_to 'Show', event_path(event) %>&nbsp;&nbsp;</td>
+	  <td><%= link_to 'Destroy', event_path(event), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to 'Back to calendar', calendar_path %>
